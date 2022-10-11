@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcule seu IMC</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="imc">
+        <h1>Tabela IMC</h1>
+        <h2>IMC</h2>
+        <p>
+          Menos do que 18,5<br />Entre 18,5 e 24,9<br />Entre 25 e 29,9<br />Entre
+          30 e 34,9<br />Entre 35 e 39,9<br />Mais do que 40
+        </p>
+      </div>
+
+      <div class="coluna-resultado">
+        <h2>Resultado</h2>
+        <p>
+          Abaixo do peso<br />Peso normal<br />Sobrepeso<br />Obesidade grau
+          1<br />Obesidade grau 2<br />Obesidade grau 3
+        </p>
+      </div>
+
+      <h1>Calcule seu IMC</h1>
+
+      <form action="#" id="formulario">
+        <label for="peso">Peso:</label>
+        <input
+          type="text"
+          name="peso"
+          id="peso"
+          placeholder="Ex: 60 ou 65.7"
+          autocomplete="off" />
+
+        <label for="altura">Altura:</label>
+        <input
+          type="text"
+          name="altura"
+          id="altura"
+          placeholder="Ex: 1.70"
+          autocomplete="off" />
+
+        <button onclick="calcular()">Calcular</button>
+      </form>
+
+      <span class="resultado"></span>
+
+      <footer class="footer">Feito por Breno de Freitas</footer>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
