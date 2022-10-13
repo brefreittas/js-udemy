@@ -4,8 +4,9 @@ const pessoa = {
     idade: 16,
 };
 
-console.log(pessoa.nome);
-console.log(pessoa['nome']);
+for (let chave in pessoa) {
+    console.log(chave, pessoa[chave]);
+}
 
 // const frutas = ['Pera', 'Maçã', 'Uva'];
 
